@@ -27,7 +27,7 @@ spec:
           readOnly: true                      # We mount output readOnly as this is for Orchestrator data.
         - mountPath: /opt/federation-lab/logging
           name: fl-log-claim
-          readOnly: true                      # We mount log readOnly as this is for the Master worker nodes.
+#          readOnly: true                      # We mount log readOnly as this is for the Master worker nodes.
   restartPolicy: OnFailure                    # Whenever the container crashes, restart.
   volumes:
     - name: fl-server-claim
